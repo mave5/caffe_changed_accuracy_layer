@@ -14,7 +14,10 @@ The process is as follows:
 1- Update file accuracy_layer.cpp located in ./caffe/src/caffe/layers as you need.
 Here I updated the file to calculate the dice coefficient. 
 
-2- then in the terminal: ./caffe$ make all 
+2- Then in the terminal: 
+
+./caffe$ make all 
+
 to update accuracy_layer.o, file located in ./caffe/build/src/caffe/layers
 
 3- you would probably need to change some of the parameter in the solver.prototext file depending on the size of 
