@@ -18,7 +18,7 @@ Here I updated the file to calculate the dice coefficient.
 
 ./caffe$ make all 
 
-to update accuracy_layer.o, file located in ./caffe/build/src/caffe/layers
+This will update accuracy_layer.o file located in ./caffe/build/src/caffe/layers
 
 3- you would probably need to change some of the parameter in the solver.prototext file depending on the size of 
 your test and training data. For instance, if you have 500 images in the test data and batch_size=100
