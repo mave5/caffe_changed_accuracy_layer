@@ -12,7 +12,7 @@ This gives us a sense of the training progress in addition to the loss value.
 The process is as follows:
 
 1- Update file accuracy_layer.cpp located in ./caffe/src/caffe/layers as you need.
-here I updated the file to calculate the dice coefficient. 
+Here I updated the file to calculate the dice coefficient. 
 
 2- then in the terminal: ./caffe$ make all 
 to update accuracy_layer.o, file located in ./caffe/build/src/caffe/layers
