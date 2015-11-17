@@ -24,7 +24,7 @@ This will update accuracy_layer.o file located in ./caffe/build/src/caffe/layers
 your test and training data. For instance, if you have 500 images in the test data and batch_size=100
 you can set:
 
-#covering the full 500 testing images (500=100*5).
+##covering the full 500 testing images (500=100*5).
 test_iter: 5
 
 Also, you can tell Caffe how often perform test and show you accuracy value on test data.
