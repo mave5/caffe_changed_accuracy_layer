@@ -10,6 +10,7 @@ Here, for our segmentation task, we need to calculate the Dice coefficient on th
 This gives us a sense of the training progress in addition to the loss value.
 
 The process is as follows:
+
 1- Update file accuracy_layer.cpp located in ./caffe/src/caffe/layers as you need.
 here I updated the file to calculate the dice coefficient. 
 
