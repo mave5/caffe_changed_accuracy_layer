@@ -31,29 +31,48 @@ Also, you can tell Caffe how often perform test and show you accuracy value on t
 #Carry out testing every 50 training iterations.
 test_interval: 50
 
-4- In case you want to see the accuracy values for both training and test data, you can add the layers:
+4- If you want to see the accuracy values for both training and test data, you can add the layers:
+
 layer {
+
   name: "accuracy"
+  
   type: "Accuracy"
+  
   bottom: "output"
+  
   bottom: "label"
+  
   top: "accuracy_train"
+  
   include {
+  
     phase: TRAIN
+    
   }
+  
 }
+
 
 layer {
-  name: "accuracy"
-  type: "Accuracy"
-  bottom: "output"
-  bottom: "label"
-  top: "accuracy_test"
-  include {
-    phase: TEST
-  }
-}
 
+  name: "accuracy"
+  
+  type: "Accuracy"
+  
+  bottom: "output"
+  
+  bottom: "label"
+  
+  top: "accuracy_test"
+  
+  include {
+  
+    phase: TEST
+    
+  }
+  
+}
 
 Now, if you train the network, you should be able to see the accuracy an loss value for both training and test data.
 
